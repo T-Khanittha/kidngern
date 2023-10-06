@@ -20,7 +20,7 @@ import com.kskk.kidngern.ui.theme.KidngernTheme
 fun MenuActionButton(
     modifier: Modifier = Modifier,
     onClickButton: () -> Unit,
-    type: MenuButtonType = MenuButtonType.ADD,
+    type: MenuButtonType,
 ) {
     val icon = when (type) {
         MenuButtonType.ADD -> Icons.Filled.Add
