@@ -19,6 +19,7 @@ import com.kskk.kidngern.ui.theme.KidngernTheme
 
 @Composable
 fun EmptyItem(
+    modifier: Modifier = Modifier,
     title: String,
     subTitle: String
 ) {
