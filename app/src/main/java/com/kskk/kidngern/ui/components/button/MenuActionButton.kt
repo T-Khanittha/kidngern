@@ -2,10 +2,12 @@ package com.kskk.kidngern.ui.components.button
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,9 +43,9 @@ fun MenuActionButton(
         modifier = modifier,
         onClick = { onClickButton() }
     ) {
-        Icon(imageVector = icon, contentDescription = contentDescription)
+        Icon(imageVector = icon, contentDescription = contentDescription,modifier= Modifier.size(24.dp))
         Spacer(modifier = Modifier.padding(2.dp))
-        Text(text = buttonText)
+        Text(text = buttonText, style = MaterialTheme.typography.bodyLarge)
     }
 }
 
